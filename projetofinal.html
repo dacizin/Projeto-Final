@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify da BA</title>
+    <link rel="stylesheet" href="projetofinal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="topo">
+            <h1 class="logo">
+                <img src="https://img.icons8.com/ios11/512/FFFFFF/spotify.png" alt="Logo do Spotify">
+            </h1>
+
+            <form class="barra-pesquisa">
+                <button type="submit" class="icone-pesquisa">
+                    <img src="https://cdn-icons-png.flaticon.com/512/115/115730.png" alt="Pesquisar">
+                </button>
+                <input type="text" placeholder="O que você quer escutar?">
+                <img src="https://cdn-icons-png.flaticon.com/512/65/65909.png" alt="" class="imagem-extra-barra">
+            </form>
+
+            <div class="topo-titulos">
+                <a href="#">Suporte</a>
+                <div class="divisor-vertical-titulos"></div>
+                <a href="#">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/973/046/non_2x/download-flat-icon-install-download-upload-load-symbol-simple-flat-free-png.png" alt="Instalar" class="icone-instalar">
+                    Instalar aplicativo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CONTAINER PRINCIPAL ===== -->
+    <div class="container-principal">
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+            <div class="library-header">
+                <div class="library-title-section">
+                    <h2 class="library-title">Sua Biblioteca</h2>
+                </div>
+                <div class="library-actions">
+                    <button class="library-btn" title="Criar">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="library-btn" title="Opções">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="library-tabs">
+                <button class="tab-btn active" data-tab="playlists">Playlists</button>
+                <button class="tab-btn" data-tab="artistas">Artistas</button>
+                <button class="tab-btn" data-tab="albuns">Álbuns</button>
+            </div>
+
+            <div class="library-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar..." class="library-search-input">
+            </div>
+
+            <div class="library-content">
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 092437.png" alt="Músicas Curtidas" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Músicas Curtidas</div>
+                        <div class="library-item-type">Playlist • 244 músicas</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Downloads\sentido.jpg" alt="Sentido" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Sentido</div>
+                        <div class="library-item-type">Playlist • Dacizin</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Downloads\1000069824.jpg" alt="Relax" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Relax</div>
+                        <div class="library-item-type">Playlist • Dacizin</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 092753.png" alt="Estudos" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Estudos</div>
+                        <div class="library-item-type">Playlist • Dacizin</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Downloads\1000069823.jpg" alt="Brasilzin" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Brzada</div>
+                        <div class="library-item-type">Playlist • Dacizin</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Downloads\night.jpg" alt="Vibe da noite" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Vibe da noite</div>
+                        <div class="library-item-type">Playlist • Dacizin</div>
+                    </div>
+                </div>
+
+                <div class="library-item">
+                    <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 092521.png" alt="Colaborativa" class="library-item-image">
+                    <div class="library-item-info">
+                        <div class="library-item-title">Dacizin e 9 outras pessoas</div>
+                        <div class="library-item-type">Playlist • Spotify</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="content">
+            <div class="row-secoes">
+                <!-- SEÇÃO MÚSICAS EM ALTA -->
+                <div class="musicas">
+                    <div class="topo2">
+                        <h2>Escutados Recentemente</h2>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 085411.png" alt="Snooze, Sza">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>Snooze</h4>
+                            <p>Sza</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 085357.png" alt="Novacane, Frank Ocean">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>Novacane</h4>
+                            <p>Frank Ocean</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 085223.png" alt="FOMDJ, Playboi Carti">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>FOMDJ</h4>
+                            <p>Playboi Carti</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 085308.png" alt="Juggernaut(feat. Lil Uzi Vert & Pharrell Willians), Tyler The Creator">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>Juggernaut(feat. Lil Uzi Vert & Pharrell Willians) </h4>
+                            <p>Tyler The Creator</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 091346.png" alt="Killer Quenn, Quenn">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>killer Quenn</h4>
+                            <p>Quenn</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 091331.png" alt="Girls Need Love, Summer Walker(with Drake)">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>Girls Need Love(with Drake)</h4>
+                            <p>Summer Walker</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="capa">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 091402.png" alt="A$AP Rocky">
+                                <div class="play">▶</div>
+                            </div>
+                            <h4>HELICOPTER</h4>
+                            <p>A$AP Rocky</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO ARTISTAS POPULARES -->
+                <div class="artistas-secao">
+                    <div class="topo3">
+                        <h2>Seus Artistas</h2>
+                      
+                    </div>
+                    <div class="cards artistas">
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="c:\Users\aluno.senai\Downloads\Frank Ocean.jpg" alt="Childish Gambino">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>Frank Ocean</h4>
+                            <p>Artista</p>
+                        </div>
+
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="c:\Users\aluno.senai\Downloads\New Jeans.jpg" alt="MANOGUUH">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>New Jeans</h4>
+                            <p>Artista</p>
+                        </div>
+
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="c:\Users\aluno.senai\Pictures\Screenshots\Captura de tela 2026-03-11 075852.png" alt="YE">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>YE</h4>
+                            <p>Artista</p>
+                        </div>
+
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="c:\Users\aluno.senai\Downloads\Giveon.jpg" alt="Igor Kannário">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>Giveon</h4>
+                            <p>Artista</p>
+                        </div>
+
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="c:\Users\aluno.senai\Downloads\Carti.jpg" alt="The Weeknd">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>Playboi Carti</h4>
+                            <p>Artista</p>
+                        </div>
+
+                        <div class="card1">
+                            <div class="foto-artista">
+                                <img src="https://i.scdn.co/image/ab6761610000517481f47f44084e0a09b5f0fa13" alt="Bad Bunny">
+                                <div class="play-artista">▶</div>
+                            </div>
+                            <h4>Bad Bunny</h4>
+                            <p>Artista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ===== PREMIUM BANNER ===== -->
+  
+</body>
+
+</html>
